@@ -1,11 +1,14 @@
 import React from 'react';
 
-const App = () => {
+const App = (props) => {
 	return (
 		<div>
-		 HELLO WORLD
+		{props.children}
 		</div>
 	);
 }
+
+
+
 
 export default App;
