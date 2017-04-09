@@ -1,9 +1,9 @@
-import {browserHistory} from "react-router"
+import {browserHistory} from "react-router";
 
 export function editContacts(contact) {
   browserHistory.push('/edit');
   return {
-    type:"EDIT_CONTACTS",
+    type: "EDIT_CONTACTS",
     payload: contact
   }
-} 
+}
