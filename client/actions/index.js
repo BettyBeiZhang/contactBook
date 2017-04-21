@@ -1,10 +1,10 @@
 import {browserHistory} from "react-router";
 
-export function editContacts(contact) {
+export function editContacts(member) {
   browserHistory.push('/edit');
   return {
     type: "EDIT_CONTACTS",
-    payload: contact
+    payload: member
   }
 }
 

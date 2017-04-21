@@ -10,7 +10,7 @@ export default (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
     <IndexRoute component={Home} />
-    <IndexRoute path="/add"  component={Add} />
+    <Route path="add"  component={Add} />
   </Route>
 </Router>
 );

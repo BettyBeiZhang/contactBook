@@ -15,7 +15,7 @@ class Home extends Component {
           </div>
 
           <div>
-            <div>{item.Fullname}</div>
+            <div>{item.fullname}</div>
             <div>{item.phone}</div>
             <div>{item.email}</div>
           </div>

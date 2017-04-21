@@ -14,6 +14,7 @@ class Add extends Component {
       email: this.emailRef.value,
       address: this.addressRef.value
   });
+
 };
 
   render() {
@@ -40,6 +41,7 @@ class Add extends Component {
         <button type="submit" className="btn btn-primary">Save</button>
       </form>
     </div>
+    
   );
 }
 }
@@ -48,7 +50,7 @@ class Add extends Component {
 function mapStateToProps(state) {
  return {
    contacts: state.contactsReducer.contacts
- };
+ }
 }
 
 

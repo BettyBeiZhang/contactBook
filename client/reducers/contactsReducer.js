@@ -12,15 +12,14 @@ const  INITIAL_STATE = {
 
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
-   case  EDIT_CONTACTS:
+   case  "EDIT_CONTACTS":
    return Object.assign({}, state, { currentContacts: action.payload })
 
    case "ADD_CONTACTS":
-     let contct = action.payload
-     contact.id = generateId(state.contacts);
-     var newContacts = state.contacts.concat([contact])
+     let member = action.payload
+     member.id = generateId(state.contacts);
+     var newContacts = state.contacts.concat([member])
      return Object.assign({}, state, { contacts: newContacts })
-  }
 
 
    default:
