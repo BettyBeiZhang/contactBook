@@ -10,6 +10,6 @@ const myStore = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <Provider store={myStore(reducers)}>
-    {routes}
+      {routes}
   </Provider>
   , document.getElementById('root'));

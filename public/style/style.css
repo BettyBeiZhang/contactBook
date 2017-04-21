@@ -1,0 +1,25 @@
+.OuterContainer {
+  margin: 0 auto;
+  border: 1px solid #D3D3D3;
+  max-width: 30%;
+  min-width: 200px;
+  box-shadow: 5px 5px 5px #D3D3D3;
+  overflow: hidden;
+}
+
+.list-group-item {
+  min-height: 97.34px;
+  border: 2px solid #D3D3D3;
+  padding: 7%;
+  border-left: none;
+  border-right: none;
+}
+
+.fa-plus, .fa-times{
+  float: right;
+  padding: 3px;
+}
+
+h3 {
+  padding: 4px 20px 10px 10px;
+}

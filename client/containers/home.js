@@ -17,7 +17,6 @@ class Home extends Component {
           <div>
             <div>{item.Fullname}</div>
             <div>{item.phone}</div>
-            {/* <div>{item.address}</div> */}
             <div>{item.email}</div>
           </div>
         </a>
@@ -28,9 +27,9 @@ class Home extends Component {
 
    render(){
      return (
-      <div className="container">
+      <div className="OuterContainer">
         <Link to="/add"><i className="fa fa-plus fa-3x"></i></Link>
-        <h3>My Contacts List</h3>
+        <h3>Contacts List</h3>
         <div className="list-group">
           {this.renderContacts()}
         </div>

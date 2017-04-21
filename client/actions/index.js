@@ -7,3 +7,11 @@ export function editContacts(contact) {
     payload: contact
   }
 }
+
+export function addContacts(attributes) {
+  browserHistory.push('/');
+  return {
+    type: "ADD_CONTACTS",
+    payload: attributes
+  }
+}
