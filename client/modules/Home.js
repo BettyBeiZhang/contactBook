@@ -8,6 +8,7 @@ class Home extends Component {
 
    renderContacts() {
      return this.props.contacts.map((item) => {
+       //console.log('member is ', this.props.contacts)
        return (
          <a key={item.id} onClick={() => this.props.editContacts(item)} className="list-group-item">
           <div className="media col-md-3">
@@ -20,7 +21,6 @@ class Home extends Component {
             <div>{item.email}</div>
           </div>
         </a>
-
       );
     });
   }

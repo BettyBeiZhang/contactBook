@@ -11,11 +11,10 @@ class Add extends Component {
     this.props.addContacts({
       fullname: this.fullnameRef.value,
       phone: this.phoneRef.value,
-      email: this.emailRef.value,
-      address: this.addressRef.value
+      email: this.emailRef.value
   });
-
 };
+
 
   render() {
   return (
@@ -24,9 +23,7 @@ class Add extends Component {
 
       <form data-toggle="validator" onSubmit={this.handleFormSubmit.bind(this)}>
         <h3>Add a contacts</h3>
-        <hr/>
-
-        <label className="control-label">Info</label>
+        <p>Add new contacts info, location and phone.</p>
         <br/>
         <div>
           <input className="form-control" type="text" ref={(input) => this.fullnameRef = input} placeholder="full name" required />
@@ -35,25 +32,22 @@ class Add extends Component {
           <br/>
           <input className="form-control" type="email" ref={(input) => this.emailRef = input} placeholder="email" required />
           <br/>
-        <input className="form-control" type="text" ref={(input) => this.addressRef = input} placeholder="address" required />
-        <br/>
       </div>
-        <button type="submit" className="btn btn-primary">Save</button>
+        <button type="submit" className="btn btn-info Savebutton">Save</button>
       </form>
     </div>
-    
   );
 }
 }
 
-
+//the new component will subscribe to redux store update.
 function mapStateToProps(state) {
  return {
    contacts: state.contactsReducer.contacts
  }
 }
 
-
+//whenever addContacts is called, the result will pass to all the reducers
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ addContacts }, dispatch);
 }

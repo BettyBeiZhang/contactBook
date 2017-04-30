@@ -1,5 +1,15 @@
 import {browserHistory} from "react-router";
 
+
+export function addContacts(attributes) {
+  browserHistory.push('/');
+  return {
+    type: "ADD_CONTACTS",
+    payload: attributes
+  }
+}
+
+
 export function editContacts(member) {
   browserHistory.push('/edit');
   return {
@@ -8,10 +18,18 @@ export function editContacts(member) {
   }
 }
 
-export function addContacts(attributes) {
+export function updateMember(member) {
   browserHistory.push('/');
   return {
-    type: "ADD_CONTACTS",
-    payload: attributes
+    type: 'UPDATE_MEMBER',
+    payload: member
+  }
+}
+
+export function deleteMember(member) {
+  browserHistory.push('/');
+  return {
+    type: 'DELETE_MEMBER',
+    payload: member
   }
 }

@@ -5,6 +5,7 @@
   min-width: 200px;
   box-shadow: 5px 5px 5px #D3D3D3;
   overflow: hidden;
+
 }
 
 .list-group-item {
@@ -20,6 +21,25 @@
   padding: 3px;
 }
 
-h3 {
+h3, p {
   padding: 4px 20px 10px 10px;
+}
+.control-label {
+  padding: 1px 5px;
+}
+
+.btn.btn-danger {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.Savebutton {
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+.btn.btn-primary {
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
